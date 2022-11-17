@@ -1,0 +1,53 @@
+.container {
+  display: block;
+  height: 20vh;
+  text-align: center;
+  width: 645px;
+  margin: 50px auto;
+  overflow: auto;
+}
+.container .strips {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  display: grid;
+  transform: skewY(-12deg);
+  top: 0;
+  grid: repeat(5, 20vh)/repeat(10, 1fr);
+  transform-origin: 0;
+  background: linear-gradient(90deg, #4dc076, #b3e895);
+}
+
+.body-section, .description-section {
+  margin: 50px 100px;
+  text-align: center;
+}
+
+.description-section {
+  border-top: 1px solid #4dc076;
+  border-bottom: 1px solid #4dc076;
+  padding-top: 25px;
+  text-align: initial;
+}
+
+@media (max-width: 1250px) {
+  .icon-text-div {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media (max-width: 645px) {
+  .container {
+    width: auto;
+  }
+  .description-section {
+    margin: 30px 5%;
+  }
+  .body-section {
+    margin: 30px 2%;
+   
+  }
+}
+/*# sourceMappingURL=confirm.css.map */
